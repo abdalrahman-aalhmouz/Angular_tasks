@@ -1,0 +1,173 @@
+<div class="container">
+    <div class="space">
+      <h6>Alert example:</h6>
+    <br>
+      <button 
+      type="button"
+      class="btn btn-primary"
+      (click)="firstalert()">Show alert
+      </button>
+    </div>
+      <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyle}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Alert!</h6>
+        </div>
+        <div class="modal-body">
+          <p>Alert message!!!</p>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger"
+              (click)="closefirststyle()">
+          Close
+          </button>
+        </div>
+        </div>
+      </div>
+      </div>
+    <div class="space"> <h6> Confirm example:</h6>  <br><button class="btn btn-primary" (click)="secondalert()">Show Confirm</button> <br>
+      {{ seconresult }}
+      </div>
+    
+      <div class="space"><h6> Prompt example: </h6> <br><button class="btn btn-primary" (click)="third_alert()">Show Prompt</button> <br>
+        {{ third_result }}
+      </div> 
+      
+    <div class="space"><h6> 
+      Close modal by click outside example:
+    </h6> 
+    <br>
+      <button
+      type="button"
+      class="btn btn-primary"
+      (click)="openPopup()">Show alert
+      </button>
+    </div>
+      <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyle}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Alert!</h6>
+        </div>
+        <div class="modal-body">
+          <p>Click outside to close dialog</p>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger"
+              (click)="closePopup()">
+          Close
+          </button>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+    
+    
+          <div class="space"><h6>ESC key closable example:</h6> <br><button class="btn btn-primary" (click)="fif_alert()">Show alert</button> 
+            <div
+            class="modal"
+            tabindex="-1"
+            role="dialog"
+            [ngStyle]="{'display':dopledisplay}">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title">Alert!</h6>
+              </div>
+              <div class="modal-body">
+                <p>Click outside to close dialog</p>
+            
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger"
+                    (click)="display_new_pop()">
+                Close
+                </button>
+              </div>
+              </div>
+            </div>
+            </div>
+            <br>
+          </div>
+    
+          
+          <div class="space"><h6>Show modal from modal:</h6> 
+            <button
+            type="button"
+            class="btn btn-primary"
+            (click)="six_alert()">Show modal
+            </button>
+          </div>
+            <div
+            class="modal"
+            tabindex="-1"
+            role="dialog"
+            [ngStyle]="{'display':modaldisplay}">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title">Alert!</h6>
+              </div>
+              <div class="modal-body">
+                <p>Shown via custom error handler</p>
+            
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger"
+                    (click)="display_new_pop()">
+                Close
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+    
+    
+          
+      <div class="space"><h6>
+        Show dialogue in error handler / catch function:</h6>
+        <br>
+        <button
+    
+        type="button"
+        class="btn btn-primary"
+        (click)="openerrorPopup()">Show alert
+        </button>
+      </div>
+        <div
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        [ngStyle]="{'display':dopledisplay}">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Alert!</h6>
+          </div>
+          <div class="modal-body">
+            <p>Shown via custom error handler</p>
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+                (click)="closePopuperror()">
+            Close
+            </button>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>

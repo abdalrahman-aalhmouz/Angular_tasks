@@ -1,0 +1,6 @@
+.display_message{
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+    margin:20px 20px 0 20px
+}
