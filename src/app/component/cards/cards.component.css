@@ -1,0 +1,42 @@
+.card{
+    margin:10px;
+    padding: 24px;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first{
+    /* background: linear-gradient(60deg,#26c6da,#00acc1); */
+    background: linear-gradient(60deg,#26c6da,#00acc1);
+        width:100%;
+    height:140px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%);}
+.secound{
+    background: linear-gradient(60deg,#ec407a,#d81b60);}
+.third{
+    background: linear-gradient(60deg,#ffa726,#fb8c00)
+}
+.four{
+    background: linear-gradient(60deg,#66bb6a,#43a047);
+}
+
+    .left_side{
+        display: flex;
+        flex-direction: column;
+       justify-content:space-between;
+    }
+    .right_side{
+        display: flex;
+         flex-direction: column;
+        justify-content:space-between;
+
+    }

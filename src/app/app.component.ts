@@ -1,5 +1,4 @@
-import { Component, ElementRef, HostListener, Input, OnInit} from '@angular/core';
-// import * as $ from 'jquery';
+import { Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

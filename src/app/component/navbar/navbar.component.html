@@ -1,0 +1,32 @@
+<div class="nav_list">
+
+    <div class="title">
+        <div>
+        <h1>SB Admin Material</h1>
+    </div>
+        <div class="serch_bar">
+            <mat-form-field class="example-full-width" appearance="fill" >
+            <mat-label class="search" >Search</mat-label>
+            <textarea matInput ></textarea>
+          </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <button mat-button class="icons"><mat-icon>file_download</mat-icon> Download Now</button>
+        <button mat-button [matMenuTriggerFor]="belowMenu"><mat-icon [ngStyle]="{'color':'white'}">language</mat-icon></button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+          <button mat-menu-item>English</button>
+          <button mat-menu-item>French</button>
+          <button mat-menu-item>Urdus</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon [ngStyle]="{'color':'white'}">person</mat-icon></button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
+          <button mat-menu-item><mat-icon>archive</mat-icon>Index</button>
+          <button mat-menu-item><mat-icon>settings</mat-icon>Setting</button>
+        </mat-menu>
+        <button mat-button  [routerLink]="['login']"><mat-icon [ngStyle]="{'color':'white'}">logout</mat-icon></button>
+    </div>
+</div>
