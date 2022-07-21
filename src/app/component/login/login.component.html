@@ -1,0 +1,33 @@
+
+<div class="all_screen"> 
+    <mat-card class="meta">
+        <mat-card-title>Sb Admin Material</mat-card-title>
+        <mat-card-subtitle>
+            <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput
+                     placeholder="Ex. pat@example.com">
+              <mat-error >
+                Please enter a valid email address
+              </mat-error>
+              <mat-error >
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput>
+              </mat-form-field>
+          </form>
+        </mat-card-subtitle>
+        <mat-card-actions>
+          <div class="chckbox">
+            <mat-checkbox color="primary" class="example-margin">Remember Me</mat-checkbox>
+            <a href="#">Forget Password ?</a>
+          </div>
+            <button class="login_btn" routerLink='/dashboard' mat-button  [ngStyle]="{'background':'#3F51B5'}">login</button>
+
+        </mat-card-actions>
+      </mat-card>
+</div>

@@ -1,0 +1,29 @@
+h1{
+color:white;
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .title{
+display: flex;
+flex-direction: row;
+justify-content: space-between;  
+align-items: center;
+margin-left: 35px;
+}
+.search{
+    color: white;
+    font-size: large;
+
+  } 
+  .serch_bar{
+    color: white;
+margin-left: 35px;
+  }
+  .icons{
+    background-color: white;
+  }

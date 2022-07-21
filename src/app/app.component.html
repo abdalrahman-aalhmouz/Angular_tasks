@@ -1,9 +1,26 @@
 <div class="main_container">
+
+    <div class="header">
+        <app-navbar></app-navbar>
+    </div>
+<div class="body">
     <div class="sub_containe">
-    <div><button class="btn btn-primary" [routerLink]="['alert']">go to alert page</button></div>
-    <div><button class="btn btn-primary" [routerLink]="['send_data']">go to alert page</button></div>
+        <div><button mat-button routerLink="/dashboard"><mat-icon [ngStyle]="{'margin':'10px'}">dashboard</mat-icon>Dashboard</button></div>
+        <div><button mat-button [routerLink]="['alert']"><mat-icon [ngStyle]="{'margin':'10px'}">equalizer</mat-icon>Alert</button></div>
+        <div><button  mat-button  [routerLink]="['send_data']"><mat-icon [ngStyle]="{'margin':'10px'}">table_view</mat-icon>table</button></div>
+    <!-- <button mat-button [routerLink]="['material']">material</button> -->
+    <div><button mat-button ><mat-icon [ngStyle]="{'margin':'10px'}">task</mat-icon>Forms</button></div>
+    <div><button mat-button ><mat-icon [ngStyle]="{'margin':'10px'}">grid_on</mat-icon>Material Grid</button></div>
+    <div><button  mat-button ><mat-icon [ngStyle]="{'margin':'10px'}">sync_alt</mat-icon>Material Component</button></div>
+    <div><button mat-button ><mat-icon [ngStyle]="{'margin':'10px'}">dashboard</mat-icon>Blank Page</button></div>
+    <div><button mat-button ><mat-icon [ngStyle]="{'margin':'10px'}">add</mat-icon>Menu</button></div>
+
 </div>
-<div><router-outlet></router-outlet>
+
+<div class="other_component">
+    <router-outlet></router-outlet>
+
+</div>
 </div>
 </div>
 

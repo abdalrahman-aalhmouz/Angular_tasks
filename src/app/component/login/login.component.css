@@ -1,0 +1,34 @@
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .login_btn{
+    width:90%;
+    margin-top: 20px;
+  }
+.all_screen{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 550px;
+  background: linear-gradient(to top, #3F51B5 0%, #3F51B5 50%, white 50%, white 100%);
+}
+.meta{
+  box-shadow:0 0 10px #ddd;
+  padding: 40px;
+  width: 500px;
+
+}
+.chckbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+  
